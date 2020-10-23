@@ -1,0 +1,219 @@
+:root {
+  --fill-color: #e07b28;
+  --secondary-color: #3d8bb1;
+  --stroke-color: #b0794c;
+  --white: white;
+  --red: #e74c3c;
+}
+
+
+
+h2 {
+  font-size: 12vw;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  //   flex-wrap: nowrap;
+  overflow-x: auto;
+  // align-items: center;
+  // justify-content: center;
+
+  .card2 {
+    flex: 0 0 auto;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.card2 {
+  width: 31%;
+  height: 100%;
+  // font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+.scrolling-wrapper,
+.scrolling-wrapper-flexbox {
+  scroll-behavior: smooth;
+  height: 100%;
+  //   margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  //   &::-webkit-scrollbar {
+  //     display: none;
+  //   }
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  line-height: initial !important;
+  font-size: 4.5vh;
+  // color: royalblue;
+  font-weight: 800;
+  // text-decoration: underline;
+  // text-decoration: none;
+  overflow: hidden;
+
+  color: #dc3545;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 275ms ease;
+
+    &::before {
+      display: inline-block;
+      content: attr(data-content);
+      //color to be filled
+      color: #87202a;
+      transform: translateX(100%);
+      transition: transform 275ms ease;
+      // text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    span {
+      transform: translateX(0);
+
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// a {
+//   color: black;
+//   -webkit-text-fill-color: white;
+//   /* Will override color (regardless of order) */
+//   -webkit-text-stroke-width: 1px;
+//   -webkit-text-stroke-color: black;
+
+// }
+
+// span {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   transform: translateX(-100%);
+//   transition: transform 275ms ease;
+// }
+
+
+// a:hover span {
+//   transform: translateX(0);
+// }
+
+
+// span::before {
+//   display: inline-block;
+//   content: attr(data-content);
+//   color: midnightblue;
+//   transform: translateX(100%);
+//   transition: transform 275ms ease;
+//   text-decoration: underline;
+// }
+
+
+// a:hover span::before {
+//   transform: translateX(0);
+// }
+
+
+.large {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.card2:hover .large {
+  left: 5px;
+  top: 10vh;
+  animation: fadeIn ease 3s;
+}
+
+.large-image {
+  max-height: 30vh;
+  max-width: 30vw;
+  border: 10px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px 3px rgba(127, 127, 127, 0.15);
+
+}
+
+
+
+.fade-in {
+  animation: fadeIn ease 20s;
+  -webkit-animation: fadeIn ease 20s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeIn ease 20s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

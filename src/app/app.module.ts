@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 
 import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
@@ -35,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HomeButtonListComponent } from './home-button-list/home-button-list.component';
+import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-button-horizontal.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,9 @@ import { HomeButtonListComponent } from './home-button-list/home-button-list.com
     FooterComponent,
     AboutComponent,
     QuizComponent,
-    HomeButtonListComponent
+    HomeButtonListComponent,
+    HomeButtonHorizontalComponent
+
   ],
   imports: [
     BrowserModule,
@@ -65,7 +68,8 @@ import { HomeButtonListComponent } from './home-button-list/home-button-list.com
     MatIconModule,
     MatListModule,
     LeafletModule.forRoot(),
-    NgxGalleryModule
+    NgxGalleryModule,
+    HammerModule
   ],
   providers: [LeafletMapService, HttpClient, PlacesService],
   bootstrap: [AppComponent],

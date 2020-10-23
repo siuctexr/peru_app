@@ -9,10 +9,12 @@ import { WalkThroughComponent } from './walk-through/walk-through.component';
 import { VisualNarrativeComponent } from './visual-narrative/visual-narrative.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HomeButtonListComponent } from './home-button-list/home-button-list.component';
+import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-button-horizontal.component';
 
 const routes: Routes = [
-  { path: '', component: HomeButtonListComponent },
-  { path: 'home', component: HomeButtonListComponent }
+  { path: '', component: HomeButtonHorizontalComponent },
+  { path: 'home', component: HomeButtonHorizontalComponent },
+  { path: 'home-old', component: HomeButtonListComponent }
 ];
 
 @NgModule({
