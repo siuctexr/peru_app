@@ -26,6 +26,13 @@ export class HomeButtonHorizontalComponent implements OnInit {
     event.preventDefault();
   }
 
+  leftScroll() {
+    this.scrollBox.nativeElement.scrollLeft -= 250;
+  }
+
+  rightScroll() {
+    this.scrollBox.nativeElement.scrollLeft += 250;
+  }
 
   onSwipe(event) {
 

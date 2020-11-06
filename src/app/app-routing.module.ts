@@ -10,9 +10,9 @@ import { VisualNarrativeComponent } from './visual-narrative/visual-narrative.co
 import { QuizComponent } from './quiz/quiz.component';
 import { HomeButtonListComponent } from './home-button-list/home-button-list.component';
 import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-button-horizontal.component';
-
+import { HomeButtonCarousalComponent } from './home-button-carousal/home-button-carousal.component';
 const routes: Routes = [
-  { path: '', component: HomeButtonHorizontalComponent },
+  { path: '', component: HomeButtonCarousalComponent },
   { path: 'home', component: HomeButtonHorizontalComponent },
   { path: 'home-old', component: HomeButtonListComponent }
 ];

@@ -30,6 +30,29 @@ $mg-app-theme: mat-light-theme($mg-app-primary, $mg-app-accent, $mg-app-warn);
 // that you are using.
 @include angular-material-theme($mg-app-theme);
 
+
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Chelsea";
+  src: url("assets/fonts/Chelsea.eot");
+  /* IE9 Compat Modes */
+  src: url("assets/fonts/Chelsea.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("assets/fonts/Chelsea.otf") format("opentype"),
+    /* Open Type Font */
+    url("assets/fonts/Chelsea.svg") format("svg"),
+    /* Legacy iOS */
+    url("assets/fonts/Chelsea.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("assets/fonts/Chelsea.woff") format("woff"),
+    /* Modern Browsers */
+    url("assets/fonts/Chelsea.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 html,
@@ -136,7 +159,7 @@ html.is-leaving .transition-swipe {
 
 .cb-slideshow:after {
   content: '';
-  /* background: transparent url(../assets/images/pattern.png) repeat top left; */
+  // background: transparent url(assets/images/pattern.png) repeat top left;
 }
 
 .cb-slideshow li span {
@@ -518,4 +541,18 @@ html.is-leaving .transition-swipe {
   .cb-slideshow li div h3 {
     font-size: 80px
   }
+}
+
+
+.mat-toolbar.mat-primary {
+  background-color: rgba(10, 10, 10, 0.0);
+}
+
+.owl-prev,
+.owl-next {
+  display: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 70px;
 }

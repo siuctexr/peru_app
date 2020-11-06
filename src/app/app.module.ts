@@ -36,7 +36,9 @@ import { AboutComponent } from './about/about.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HomeButtonListComponent } from './home-button-list/home-button-list.component';
 import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-button-horizontal.component';
+import { HomeButtonCarousalComponent } from './home-button-carousal/home-button-carousal.component';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,8 @@ import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-but
     AboutComponent,
     QuizComponent,
     HomeButtonListComponent,
-    HomeButtonHorizontalComponent
+    HomeButtonHorizontalComponent,
+    HomeButtonCarousalComponent
 
   ],
   imports: [
@@ -69,7 +72,8 @@ import { HomeButtonHorizontalComponent } from './home-button-horizontal/home-but
     MatListModule,
     LeafletModule.forRoot(),
     NgxGalleryModule,
-    HammerModule
+    HammerModule,
+    CarouselModule
   ],
   providers: [LeafletMapService, HttpClient, PlacesService],
   bootstrap: [AppComponent],

@@ -1,4 +1,4 @@
-<ul class="cb-slideshow">
+<ul class="cb-slideshow" style="list-style: none;">
   <li><span>Image 01</span></li>
   <li><span>Image 02</span></li>
   <li><span>Image 01</span></li>
@@ -7,55 +7,63 @@
   <li><span>Image 02</span></li>
 </ul>
 
+
 <div style="height: 100%; padding-top: 80px; scroll-behavior: smooth;">
   <div #scrollBox class="scrolling-wrapper-flexbox" (wheel)="onWheelParent($event)">
+    <div class="left-arrow noselect" (click)="leftScroll()">
+      <mat-icon class="arrows">keyboard_arrow_left</mat-icon>
+    </div>
 
-    <div class="card2" style="width:20%" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
-      <a href="https://bit.ly/cojalvr" target="_blank">
+    <div class="right-arrow noselect" (click)="rightScroll()">
+      <mat-icon class="arrows">keyboard_arrow_right</mat-icon>
+    </div>
+
+    <div class="card2 c1" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
+      <a href="https://bit.ly/CJEtouch" target="_blank">
         <span data-content="Cojal VR Tour" aria-hidden="true"></span>Cojal VR Tour
-
 
       </a>
       <span class="large">
-        <a href="https://bit.ly/cojalvr" target="_blank"><img src="../../assets/images/vr.jpg" class="large-image"
+        <a href="https://bit.ly/CJEtouch" target="_blank"><img src="assets/images/vr.jpg" class="large-image"
             alt="adventure"></a>
       </span>
 
     </div>
 
-    <div class="card2" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
+    <div class="card2 c2" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
       <a href="https://dev.d1vzvuqja7ci3l.amplifyapp.com" target="_blank"><span
           data-content="Northern Gallinazo Storymap" aria-hidden="true"></span>Northern Gallinazo Storymap</a>
 
       <span class="large">
-        <a href="https://dev.d1vzvuqja7ci3l.amplifyapp.com" target="_blank"><img src="../../assets/images/storymap.jpg"
+        <a href="https://dev.d1vzvuqja7ci3l.amplifyapp.com" target="_blank"><img src="assets/images/storymap.jpg"
             class="large-image" alt="adventure"></a>
       </span>
     </div>
-    <div class="card2" style="width:25%" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
+
+    <div class="card2 c3" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
       <a href="https://bit.ly/gallinazo3D" target="_blank"><span data-content="Gallinazo 3D Artifacts"
           aria-hidden="true"></span>Gallinazo 3D Artifacts</a>
 
       <span class="large">
-        <a href="https://bit.ly/gallinazo3D" target="_blank"><img src="../../assets/images/3dmodels.png"
-            class="large-image" alt="adventure"></a>
+        <a href="https://bit.ly/gallinazo3D" target="_blank"><img src="assets/images/3dmodels.png" class="large-image"
+            alt="adventure"></a>
       </span>
     </div>
-    <div class="card2" style="width:25%" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
+    <div class="card2 c4" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
       <a href="https://bit.ly/gallinazo360" target="_blank"><span data-content="Gallinazo 360 Video"
           aria-hidden="true"></span>Gallinazo 360 Video</a>
 
       <span class="large">
-        <a href="https://bit.ly/gallinazo360" target="_blank"><img src="../../assets/images/360video.png"
-            class="large-image" alt="adventure"></a>
+        <a href="https://bit.ly/gallinazo360" target="_blank"><img src="assets/images/360video.png" class="large-image"
+            alt="adventure"></a>
       </span>
     </div>
-    <div class="card2" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
+    <div class="card2 c5" (wheel)="onWheel($event)" (swipe)="onSwipe($event)">
       <a href="https://bit.ly/cojalvr" target="_blank"><span data-content="Songoy-Cojal AR Experience"
           aria-hidden="true"></span>Songoy-Cojal AR Experience</a>
 
       <span class="large">
-        <a href="https://bit.ly/cojalvr" target="_blank"><img src="../../assets/images/vr.jpg" class="large-image"
+        <a href="https://bit.ly/cojalvr" target="_blank"><img src="assets/images/vr.jpg" class="large-image"
             alt="adventure"></a>
       </span>
     </div>
